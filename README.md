@@ -14,7 +14,9 @@
 - [Акт 10 — The Fall of Oriath](#act-10)
 
 
-## Акт 1 — The Awakening <a id="act-1"></a>
+<h2 id="act-1" style="color: red; font-size: 2.2em; font-weight: 700; margin-top: 32px;">
+  Акт 1 — The Awakening
+</h2>
 Рекомендуемый уровень к концу акта: **12**
 
 ---
@@ -227,7 +229,9 @@
 
 ---
 
-## Акт 2 — The Bandit Lords <a id="act-2"></a> 
+<h2 id="act-2" style="color: red; font-size: 2.2em; font-weight: 700; margin-top: 32px;">
+  Акт 2 — The Bandit Lords
+</h2>
 Рекомендуемый уровень к концу акта: **22**
 
 ---

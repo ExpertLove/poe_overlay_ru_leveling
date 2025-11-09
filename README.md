@@ -1,339 +1,483 @@
-<div align="center">
+# Гайд по прохождению кампании Path of Exile
 
-<h1>XileHUD (Beta)</h1>
+## Навигация по актам
 
-Lightweight PoE1 and PoE2 item & modifier overlay – copy an item, see the data instantly.<br/>
-<a href="https://github.com/XileHUD/poe_overlay/releases/latest">⬇ Download the Latest Release</a><br/>
-<sub>Windows x64 • Installer + Auto‑Update • Local-First • Privacy Focused</sub>
-
-<br />
-
-<a href="https://discord.gg/ePVpA95ReW">💬 Join our Discord</a> • <a href="https://www.reddit.com/r/PathOfExile2/comments/1o1ed0n/i_was_frustrated_with_the_limited_merch_history/">Reddit Discussion</a>
-
-<br />
-
-<a href="https://www.youtube.com/watch?v=S_K_4U-rByU" target="_blank" rel="noopener noreferrer" title="Watch the latest XileHUD feature showcase on YouTube">
-	<img src="./screenshots/YT04.png" alt="XileHUD Feature Showcase (YouTube)" width="720" />
-</a><br/>
-<sub><a href="https://www.youtube.com/watch?v=S_K_4U-rByU" target="_blank" rel="noopener noreferrer"><em>Latest video: Leveling Overlay + PoB Integration</em></a></sub>
-
-<br />
-
-<sub><a href="https://youtu.be/m6PkfTIK-1E" target="_blank" rel="noopener noreferrer"><em>Previous video: Full PoE1 & PoE2 Support Overview</em></a></sub>
-
-<br />
+- [Акт 1 — The Awakening](#act-1)
+- [Акт 2 — The Bandit Lords](#act-2)
+- [Акт 3 — The Eternal Nightmare](#act-3)
+- [Акт 4 — The Fall of Oriath](#act-4)
+- [Акт 5 — The Fall of Oriath Part 2](#act-5)
+- [Акт 6 — Fallen from Grace](#act-6)
+- [Акт 7 — The Master of a Million Faces](#act-7)
+- [Акт 8 — The Gemling Legion](#act-8)
+- [Акт 9 — The Blood Aqueduct](#act-9)
+- [Акт 10 — The Fall of Oriath](#act-10)
 
 
-</div>
+## Акт 1 — The Awakening <a id="act-1"></a>
+Рекомендуемый уровень к концу акта: **12**
 
 ---
 
-## What is XileHUD?
+### 1. The Twilight Strand
 
-I initially created this HUD for my personal use. As a self-employed trader, I spend a lot of time on the PC, and Path of Exile is the perfect game for that. I've been coding as a hobby for some years now, mainly building tools that help me get things done faster. A friend saw the overlay and told me I should release it to the public, so here we are. I hope you find it as useful as I do!
-
----
-
-## ✨ Features
-
-### Leveling Overlay
-A comprehensive leveling companion for both PoE1 (Acts 1-10) and PoE2 (Acts 1-7). The overlay provides optimized step-by-step guides with automatic zone detection via Client.txt monitoring, so you never miss a quest reward, waypoint, or trial.
-
-**Key Features:**
-- Complete act-by-act guides for PoE1 and PoE2
-- Auto-detection of zone changes with progress tracking
-- Full Path of Building integration: import builds and view recommended gems, passive tree progression, gear sets, and notes
-- Floating windows for gems and passive tree with interactive zoom/pan controls
-- Multiple view modes: Normal, Minimal (compact header), and Ultra-Minimal (click-through overlay)
-- Speedrun timer with run history database, comparisons (best/previous/average), and detailed statistics
-- Customizable hotkeys for navigation, passive tree toggle, and gems window toggle
-- Leveling-only mode for minimal resource usage
-
-> **ℹ️ First-Time Setup**  
-> On first start, open the overlay with `Ctrl+Q` and navigate to **Tools → Leveling Overlay**. If you prefer to use only the leveling overlay, open the main settings and click the **Feature Selector** to uncheck everything except the leveling overlay. This will let you use only the leveling overlay, which opens with `Ctrl+Q` on start.
-
-_Images coming soon_
-
-### Merchant History
-One of the core motivations for this project. In-game, the vendor history is capped at the last 100 items and doesn't show the items themselves. XileHUD provides a local, searchable, and filterable history of your merchant interactions, allowing you to save and analyze more than just the last 100 transactions. Over recent versions, more filter options and quality-of-life features have been continuously added.
-
-![Merchant History](./screenshots/PoE2/Merchant%20History/Merchant.gif)
-
-<sub>*Note: At the time of writing, the new PoE1 league has not yet started, but Merchant History will be fully supported from day one.*</sub>
-
-### Merchant History Insights
-Merchant history filters power more than just the table: currency totals, trade counts, and the earnings graph now rebuild from the filtered dataset, keeping every stat perfectly aligned with the data slice you're studying.
-
-### Detailed Modifier Overview
-Get an in-depth look at item modifiers with advanced filters, weighting, and more. Instantly understand the power of an item. Every possible filter option has been added, allowing you to see every modifier that can spawn on a specific item. 
-
-Supports influences, new league crafting mechanics, and essentially everything imaginable with finely-tuned filter options.
-
-**PoE1:**
-
-![PoE1 Modifiers](./screenshots/PoE1/Modifiers/Modifiers.gif)
-
-**PoE2:**
-
-With the new Whittling Helper, you can continue your hotkey workflow exactly as before, but now the header gains a dedicated "Whittling" label. Hovering over it reveals every affix the overlay parsed—including their tiers, item level requirements, and which modifier would be whittled. The target line is highlighted in orange so you know precisely what you're locking in.
-
-![PoE2 Modifiers](./screenshots/PoE2/Modifiers/Modifiers.gif)
-
-### Crafting Currency Helper
-Ever wondered about the different Essences, Omens, or Scarabs available? Instead of manually searching the trade site, simply press Ctrl+Q (or your configured hotkey) on any currency or item to see a detailed, filterable list of what they do.
-
-**PoE1:**
-
-![PoE1 Crafting](./screenshots/PoE1/Crafting/Crafting.gif)
-
-**PoE2:**
-
-![PoE2 Crafting](./screenshots/PoE2/Crafting/Crafting.gif)
-
-### Smart Clipboard
-The overlay is intelligent. If you copy a rare Strength-based chestplate, for example, the modifiers page will automatically open with the "STR Chest" category pre-selected. This functionality extends to Omens, Essences, Catalysts, Uniques, Flasks, Relics, Scarabs, and much more, saving you valuable clicks. 
-
-### Character Planner
-View all available Gems with detailed Gem pages that show level progression and visual graphs, Atlas Passives, Keystones, Anointments, Tattoos, and Ascendancy passives. Filter everything to your needs to plan your next build or optimize your current one. A comprehensive glossary is also included.
-
-**PoE1:**
-
-![PoE1 Character](./screenshots/PoE1/Character/Character.gif)
-
-### Quest Passives Helper
-With the absence of the `/passives` command in PoE2 and the increased number of campaign rewards, this tool is essential. Track and filter all sources of Spirit, passive points, resistances, and attributes. Check them off as you collect them to ensure you never miss a permanent character boost.
-
-**PoE2:**
-
-![PoE2 Character](./screenshots/PoE2/Character/Character.gif)
-
-### Item Database
-Browse all base items and Uniques in the game through a clean, organized interface with powerful filtering options. For instance, find the highest evasion base armor with just a few clicks.
-
-### Base Browser → Modifiers Jump
-From the Bases browser, you can now jump straight into the relevant modifier list with a single click. Look up a base, tap the new "View modifiers" shortcut, and the overlay pivots directly to the matching category so you can evaluate tiers without searching manually.
-
-**PoE1:**
-
-![PoE1 Items](./screenshots/PoE1/Items/Items.gif)
-
-**PoE2:**
-
-![PoE2 Items](./screenshots/PoE2/Items/Items.gif)
-
-### Map Regex Tool
-A simple tool to make juicing maps more straightforward. Select the mods you want or don't want, and copy the generated regex directly into the game.
-
-**PoE1:**
-
-![PoE1 Tools](./screenshots/PoE1/Tools/Tools.gif)
-
-### Unified Settings Screen
-All preferences live in a single, keyboard-friendly Settings hub: manage hotkeys, overlay themes, capture behavior, and advanced options without digging through configuration files.
-
-### Feature Selector
-Quickly tailor the overlay to the features you actually use. Toggle whole modules on or off, reorder their priority, and keep your HUD lean during leagues when you only care about a handful of systems.
-
-**PoE1:**
-
-![PoE1 Settings](./screenshots/PoE1/Settings/Settings.gif)
-
-### Fuzzy Search Everywhere
-Every major data panel now supports fuzzy matching. Type fragments or abbreviations ("ev armor", "anc ra") and the overlay ranks the closest hits instantly, so you never have to remember the exact wording of an item base, quest, or modifier.
-
-### Focused Gaming
-The overlay is designed to be unobtrusive and can be quickly toggled with a hotkey, keeping you focused on the game.
-
-### Local Database
-Most features are fully local and can be used offline. An internet connection and account authentication are only required for the Merchant History to fetch your data from the PoE servers.
+- Пройди по зоне и убей Hillock.
+  - Подсказка: гарантированное повышение до уровня 2.
+  - Маршрут: двигайся на восток/северо-восток вдоль берега. Hillock всегда находится в крайней восточной части. Игнорируй врагов, бери только оружие, камень умения и камень поддержки.
+- В конце зоны войди в `Lioneye's Watch`.
 
 ---
 
-## 🚀 Quick Start
+### 2. Lioneye's Watch (первое посещение)
 
-Download the installer (`XileHUD-Setup-x.y.z.exe`) from the [Releases](https://github.com/XileHUD/poe_overlay/releases/latest) page and run it (first run of an unsigned build: Windows SmartScreen → “More info → Run anyway”). Then:
-
-**Select Game Version**  
-On first launch, choose whether you want to use the PoE1 or PoE2 version. You can always change your selection in Settings later. The overlay only loads features for the selected version to maximize performance, but you can easily switch between both on the fly.
-
-**Primary Hotkey (Ctrl+Q)**  
-In-game (Windowed or Borderless Fullscreen), simply hover your mouse over any item (gear, essence, omen, socketable, scarab, etc.) and press `Ctrl+Q`. The overlay automatically copies the item in the background and shows the correct panel instantly—no manual copy, no extra clicks. 
-
-If the copy doesn't work for you, it's most likely because PoE is running in admin mode. Windows does not allow non-admin applications to execute `Ctrl+C` in admin-privilege programs. Either start PoE without admin rights or start XileHUD in admin mode. 
-
-**On-Screen Button (No Hotkey Mode)**  
-Right-click the tray icon to spawn a draggable on-screen button. Place it anywhere, pin it if you like, and left-click it while hovering an item to capture and display that item. Great for relaxed mapping or controller/couch setups.
-
-**Toggling & Capturing**  
-- `Ctrl+Q` when overlay is hidden: capture hovered item & show overlay.  
-- `Ctrl+Q` again (if not pinned): hide overlay.  
-- While pinned: subsequent `Ctrl+Q` (or button clicks) replace the content without hiding.
-
-**System Tray**  
-- Left click: show/hide overlay  
-- Right click: quit/options (including enabling the capture button)  
-- Open **Settings** from here (or `Ctrl+,`) to access the feature selector, hotkey tweaks, and overlay preferences.
-
-**Updates**  
-Future versions auto-download silently and apply when you exit the app; your settings and merchant history remain intact.
+- Поговори с Tarkleigh.
+  - Квест: Enemy at the Gate  
+  - Награда: камень умения 1 уровня.
+- Выйди из города в зону `The Coast`.
 
 ---
 
-## 🔒 Privacy
+### 3. The Coast
 
-No telemetry or tracking is implemented. Account authentication is only required if you wish to use the Merchant History feature to fetch your data from your Path of Exile account. All other features work offline.
-
----
-
-## 🗺️ Roadmap
-
-I usually add features that I personally think would help me save time, so when you see an update, it's likely something I'm actively using myself.
-
-**New / High-Priority Ideas:**
-- **Unique Drop Source Tags:** Display where each Unique item drops (boss, encounter, league mechanic) to support target-farming and planning.
-- **Leveling Overlay:** Route planner with act/zone splits, boss prep tips, and automatic progress detection (so you never miss a quest reward or passive point while rushing).
-- **Speedrun Timer:** Lightweight in-overlay timer with segment splits (acts, key bosses) and auto-split hooks planned when reliable triggers are identified.
-- **"Today I Learned" Knowledge Base:** Curated micro-tips (e.g., how to cheaply get a level 21 gem)—community aggregated, surfaced contextually later.
-
-**Existing / Ongoing:**
-- **Spectre Database:** A comprehensive list of spectres and their abilities.
-- **Shareable Crafting Recipes:** Create and share crafting processes with the community.
-- **Expanded Regex Tool:** Add more categories for deeper customization.
-- **And much more!** Many other ideas are in development to continue making our lives in Wraeclast easier.
-
-**Future / Exploratory:**
-- **Exchange Prices Integration:** Optional toggleable pricing data (overlay remains fully functional offline if disabled).
-- **Top Builds Browser:** View popular builds for each class directly in the overlay for build inspiration.
-- **Mobile Companion App:** Primarily for Merchant History on-the-go; also useful for console players to browse their trade data.
-
-**Technical Improvements** (moved to bottom for clarity):
-- ✅ ~~Modularize history module~~ (Complete: reduced from 1,279 → 215 lines, 11 focused modules)
-- Modularize overlay.html more
-- Further refactor main.ts: Continue code cleanup and organization
+- Активируй Waypoint.
+- Пробеги в `The Mud Flats`.
+  - Подсказка: убивать врагов не обязательно — следующие зоны дадут достаточный опыт до уровня 4; можно собирать лут с трупов по пути.
 
 ---
 
-## ❓ WIP FAQ (Work in Progress)
+### 4. The Mud Flats
 
-<sub>Early, evolving list. Content will expand as common questions come up. Nothing here is marketing fluff – just straight answers.</sub>
-
-<details>
-<summary><strong>Is this all within GGG's ToS?</strong></summary>
-<p>
-XileHUD is basically just a visual wrapper for official data—think of it as a nice-looking browser. All the modifier data and subpages are local JSON files I curated, so nothing is ever read from the game itself. It's basically 100% the same as opening PoEDB in your browser while playing.
-
-The only online part is the Merchant History. It’s the same data you get when you open the trade history website (trade2/history); we just display the official API data in a cleaner, more usable format. There is no extra data beyond what the site provides.
-
-Item detection is built on GGG's own copy feature. When you press Ctrl+(Alt)+C on an item, the game copies its data to your clipboard—XileHUD just reads that text, like all price checkers (Exiled Exchange, Awakened PoE, Sidekick, etc.) do.
-
-So nothing in XileHUD violates GGG's ToS. I've read them many times and made sure everything stays fully compliant. The tool was originally made for my own use. GGG will never officially endorse third-party tools since developers could change the code at any time, but they do check for ToS compliance. I also contacted them directly by email to let them know XileHUD exists, and the Reddit thread about it reached over 500 upvotes, so I'm quite certain they're aware of it.
-
-Keep in mind that I'm not GGG, so like with any third-party tool, you always use it at your own risk. That applies to every external tool out there. I personally won't add any feature unless I'm absolutely certain it's allowed—I'm not interested in touching any grey areas. I love my account too much.
-</p>
-</details>
-
-<details>
-<summary><strong>Why don't you integrate a price check?</strong></summary>
-<p>
-I considered it. In my private version, there is one because I don't like waiting on features I personally need. I left it out publicly because there are already overlays that do price checking very well. I personally recommend <em>Exiled Exchange</em> (and <em>Awakened PoE</em> for PoE1)—in my opinion, the best option: slim and feature-complete.
-</p>
-</details>
-
-<details>
-<summary><strong>Any other features planned?</strong></summary>
-<p>
-Check the roadmap. I have many ideas because I actively play every day. The current version is a beta—I'll keep adding things I personally find useful over time.
-</p>
-</details>
-
-<details>
-<summary><strong>How long have you played PoE?</strong></summary>
-<p>
-Over a decade. I started a bit after beginning my self-employed work. My job involves a lot of "observing", which makes it perfect to play games alongside. I think GGG is the best gaming company in the industry; I love their games and don't see myself switching to anything else as a main game.
-</p>
-</details>
-
-<details>
-<summary><strong>Do you have any socials for updates?</strong></summary>
-<p>
-Yes! You can find us on Discord: https://discord.gg/eRY6UMg4
-</p>
-</details>
-
-<details>
-<summary><strong>Are you open to improvements?</strong></summary>
-<p>
-For sure—performance or new features. I have an open mind; if I think it genuinely improves the overlay, I'll add it.
-</p>
-</details>
-
-<details>
-<summary><strong>Where to contact?</strong></summary>
-<p>
-Open an issue here on GitHub, or even better, message me on Discord: https://discord.gg/eRY6UMg4
-</p>
-</details>
+- Найди 3 Glyphs в водных потоках.
+  - Подсказка: потоки образуют треугольник или линию.
+  - Маршрут: гнёзда образуют треугольник; ориентируйся по маркерам квеста и направлению основного выхода (варианты раскладки: восток, север, юг).
+- Найди и войди в `The Submerged Passage`.
+- (Опционально, [LEAGUE START]) Вернись в `The Coast` через Waypoint.
 
 ---
 
-## 🐞 Reporting Issues
+### 5. The Coast → The Tidal Island (опционально, старт лиги)
 
-If you encounter a bug or have a suggestion, please create an issue on the **[GitHub Issues page](https://github.com/XileHUD/poe_overlay/issues)**. You can also report issues on Discord: https://discord.gg/eRY6UMg4
-
-When reporting, please include:
-
-- The application version.
-- Steps to reproduce the issue.
-- The item text (if it's an item parsing issue).
-- Any relevant output from the console.
-
----
-<!-- Build & Contributing sections intentionally removed -->
----
-
-## 📜 License
-
-Licensed under **GNU GPLv3** (see [`LICENSE`](./LICENSE)).
-
-This project is not affiliated with or endorsed by Grinding Gear Games.
+- (Опционально, [LEAGUE START]) Войди в `The Tidal Island`.
+- (Опционально, [LEAGUE START]) Убей Hailrake и забери Medicine Chest.
+  - Рекомендуемый уровень: 4.
+  - Маршрут: двигайся влево. Если упёрся в уступ, развернись и иди по правой/восточной стороне к арене.
+- (Опционально, [LEAGUE START]) Вернись в `Lioneye's Watch` (релог).
 
 ---
 
-## Acknowledgements
+### 6. Lioneye's Watch — награды за побочные квесты (опционально)
 
-- [Grinding Gear Games](http://www.grindinggear.com/) – For creating the incredible [Path of Exile](https://www.pathofexile.com/) and many of the file formats used. Please support them and do not reuse their files without permission.
-- [OmegaK2](https://github.com/OmegaK2) – The original developer of PyPoE.
-- [brather1ng](https://github.com/brather1ng) – For the updated PyPoE fork.
-- Chriskang – For the original VisualGGPK2.
-- [POEDB](http://poedb.tw/us/), [POE2.RE](https://poe2.re/) & [PoE Wiki](https://www.poewiki.net/) – Invaluable data and references.
-- [Siveran](https://github.com/Siveran/siveran.github.io)
-- [UIOHook](https://github.com/kwhat/libuiohook)
-- [SnosMe](https://github.com/SnosMe/uiohook-napi)
-
-Leveling-Overlay:
-
-- [EXILE-LEVELING](https://github.com/HeartofPhos/exile-leveling)
-- [Lailloken (Exile-UI)](https://github.com/Lailloken/Exile-UI)
----
-
-## 🔧 Building From Source
-
-```bash
-# Install dependencies
-npm install
-
-# Build the application
-npm run build
-
-# Start the overlay
-npm run start
-
-# Package unsigned installer
-npm run dist:unsigned
-```
-
-All required data JSON files reside under `data/poe2/<League>/` inside this repository so no external folders are needed.
-
-Environment override (optional): set `XILEHUD_DATA_DIR` to point to an alternate league directory at runtime.
+- (Опционально, [LEAGUE START]) Сдай квесты Tarkleigh и Nessa:
+  - Breaking Some Eggs, Mercy Mission.
+  - Награды: Quicksilver Flask, камни поддержки 4 уровня.
+- (Опционально, [LEAGUE START]) Используй Waypoint в `The Submerged Passage`.
 
 ---
+
+### 7. The Submerged Passage
+
+- Продвигайся по зоне, найди мост и поставь портал.
+  - Подсказка: можно поставить портал, когда на мини-карте увидишь вход в `The Flooded Depths`.
+  - Маршрут: следуй основной дорожке; ставь портал у моста или при обнаружении входа в нижнюю пещеру.
+- Перейди мост и войди в `The Ledge`.
+
+---
+
+### 8. The Ledge
+
+- Двигайся по зоне к `The Climb`.
+  - Подсказка: безопаснее держаться вдоль скал.
+  - Маршрут: сначала прижимайся к стене со стороны горы; после козьего прохода — к стене со стороны воды, чтобы избежать босса-тотема Kuduku the False God.
+
+---
+
+### 9. The Climb
+
+- Следуй к `The Lower Prison`, держа западный край.
+  - Подсказка: от входа просто иди вдоль западной границы.
+
+---
+
+### 10. The Lower Prison
+
+- Активируй Waypoint.
+- Вернись в `Lioneye's Watch` через Waypoint.
+
+---
+
+### 11. Lioneye's Watch — возврат в подземелья
+
+- (Опционально, [LEAGUE START]) Вернись по порталу в `The Submerged Passage`.
+  - Если не старт лиги — можно пропустить и позже покупать камни у Lilly Roth.
+
+---
+
+### 12. The Submerged Passage → The Flooded Depths (пассивная точка)
+
+- Найди вход в `The Flooded Depths`.
+  - Подсказка: обычно расположен на направлениях «6 часов» или «час» до моста, реже — «3 часа».
+- В `The Flooded Depths` убей Deep Dweller.
+  - Подсказка: босс обычно находится по диагонали от входа.
+- Вернись в `Lioneye's Watch` (релог).
+
+---
+
+### 13. Lioneye's Watch — пассивная точка и сюжет
+
+- Поговори с Tarkleigh.
+  - Квест: The Dweller of the Deep.  
+  - Награда: ⭐ пассивное очко.
+- Поговори с Nessa.
+  - Квест: The Caged Brute.  
+  - Награда: камни поддержки 8 уровня.
+- Используй Waypoint в `The Lower Prison`.
+
+---
+
+### 14. The Lower Prison — Trial и путь наверх
+
+- (Опционально, рекомендовано [LEAGUE START]) Пройди Trial of Ascendancy.
+  - Подсказка: обычно находится в направлении на «час».
+- Найди выход в `The Upper Prison`.
+
+---
+
+### 15. The Upper Prison — Brutus
+
+- (Опционально) Найди Chemist's Strongbox.
+  - Подсказка: высокий шанс получить Quicksilver Flask.
+  - Рецепт: Quicksilver Flask + Orb of Augmentation + ботинки = ботинки с бонусом к скорости передвижения.
+- Убей Brutus.
+  - Цель: уровень персонажа примерно от 8 до 10.
+- Вернись в `Lioneye's Watch` (релог).
+
+---
+
+### 16. Lioneye's Watch — награды за Brutus
+
+- Поговори с Tarkleigh.
+  - Квест: The Caged Brute.  
+  - Награда: умения передвижения 10 уровня.
+- Используй Waypoint в `Prisoner's Gate`.
+
+---
+
+### 17. Prisoner's Gate
+
+- Пройди зону к `The Ship Graveyard`.
+  - Подсказка: выход всегда на более низком уровне, чем вход.
+  - Маршрут: одна сторона — высокая каменная стена, другая — уступы и спуски; держись стороны со спусками.
+
+---
+
+### 18. The Ship Graveyard — подготовка к Мервейл
+
+- Найди вход в `The Ship Graveyard Cave` и поставь портал рядом.
+  - Маршрут: двигайся вдоль скал, пока не увидишь либо пещеру, либо вход в `The Cavern of Wrath`.
+- Найди и войди в `The Cavern of Wrath`.
+
+---
+
+### 19. The Cavern of Wrath
+
+- Активируй Waypoint.
+  - Подсказка: следуй по руслу воды по направлению течения.
+- Вернись в `Lioneye's Watch` через Waypoint.
+
+---
+
+### 20. Lioneye's Watch — подготовка к битве с Merveil
+
+- Поговори с Nessa.
+  - Квест: The Siren's Cadence.  
+  - Награда: камни умений 12 уровня.
+- Вернись в `The Ship Graveyard` через портал/Waypoint.
+
+---
+
+### 21. The Ship Graveyard — Allflame и Fairgraves
+
+- Войди в `The Ship Graveyard Cave`.
+- Найди Allflame.
+  - Подсказка: расположен диагонально от входа.
+  - Маршрут: Allflame и выход к арене Fairgraves лежат примерно по одной диагонали.
+- Вернись в `The Ship Graveyard`.
+- Найди Fairgraves и убей его.
+- Вернись в `Lioneye's Watch` (релог).
+
+---
+
+### 22. Lioneye's Watch — дополнительные награды
+
+- Поговори с Bestel.
+  - Квест: The Marooned Mariner.  
+  - Награда: ⭐ пассивное очко.
+- (Опционально) Докупи оставшиеся нужные камни у Nessa.
+- Используй Waypoint в `The Cavern of Wrath`.
+
+---
+
+### 23. The Cavern of Wrath → The Cavern of Anger → выход из акта
+
+- В `The Cavern of Wrath` следуй по воде в направлении течения к входу в `The Cavern of Anger`.
+- В `The Cavern of Anger`:
+  - Найди логово и убей Merveil — финального босса акта 1.
+  - Рекомендуемый уровень к бою: около 12.
+- После победы войди в `The Southern Forest` — начало Акта 2.
+
+---
+
+## Акт 2 — The Bandit Lords <a id="act-2"></a> 
+Рекомендуемый уровень к концу акта: **22**
+
+---
+
+### 1. The Southern Forest
+
+- Из `The Cavern of Anger` войди в `The Southern Forest`.
+- Следуй по краю зоны к `The Forest Encampment`.
+  - Подсказка: зона с высокой плотностью монстров — отлично подходит для добора опыта, если недокачан.
+
+---
+
+### 2. The Forest Encampment (первое посещение)
+
+- Выйди из лагеря в `The Old Fields`.
+
+---
+
+### 3. The Old Fields
+
+- Двигайся по дороге к `The Crossroads`.
+- (Опционально, [LEAGUE START]) У входа в `The Den` поставь портал.
+  - Подсказка: нужно только, если планируешь выполнять цепочку квестов на дополнительный Quicksilver Flask/ремни.
+  - Маршрут: следуй по дороге, пока не найдёшь вход в `The Den`.
+
+---
+
+### 4. The Crossroads
+
+- Активируй Waypoint в центре зоны.
+- (Опционально, [LEAGUE START]) Отсюда можно:
+  - Вернуться в город или по порталу в `The Den`, убить White Beast и сдать квест Yeena.
+- От Waypoint направляйся к `The Chamber of Sins Level 1`.
+  - Подсказка: выход в сторону `The Chamber of Sins` обычно расположен северо-западнее от Waypoint.
+
+---
+
+### 5. The Chamber of Sins Level 1
+
+- Найди центральную круглую комнату и Waypoint.
+- Из центральной области войди в `The Chamber of Sins Level 2`.
+  - Подсказка: проход на 2-й уровень находится за Waypoint.
+
+---
+
+### 6. The Chamber of Sins Level 2
+
+- Доберись до центральной комнаты.
+  - Подсказка: иконка Waypoint на мини-карте помогает ориентироваться в сторону выхода.
+- (Опционально, [LEAGUE START]) Пройди Trial of Ascendancy.
+- Убей Fidelitas и собери Baleful Gem.
+  - Рекомендуемый уровень: около 15 (цель 14–15).
+  - Маршрут: от центральной комнаты иди по длинному коридору до арены с боссом.
+- Вернись в `The Forest Encampment` (релог).
+
+---
+
+### 7. The Forest Encampment — награда за Fidelitas
+
+- Поговори с Greust.
+  - Квест: Intruders in Black.  
+  - Награда: камни умений 16 уровня (utility & heralds).
+- Используй Waypoint в `The Riverways`.
+
+---
+
+### 8. The Riverways
+
+- Активируй Waypoint.
+- Следуй по дороге к `The Western Forest`.
+  - Подсказка: разрушенные мосты могут потребовать скиллов передвижения.
+
+---
+
+### 9. The Western Forest
+
+- Активируй Waypoint.
+- Найди вход в `The Weaver's Chambers`.
+  - Подсказка: вход расположен на противоположной от Waypoint стороне дороги.
+  - Дополнительно: лагерь Alira находится на той же стороне, что и вход, по каменистой тропе в стороне.
+
+---
+
+### 10. The Weaver's Chambers
+
+- Иди вглубь зоны, следуя левой стене.
+- Убей The Weaver и забери Maligaro's Spike.
+  - Рекомендуемый уровень: около 16.
+  - Маршрут: двигайся на северо-запад; если упёрся в тупик — сместись на север.
+- Вернись в `The Forest Encampment` (релог).
+
+---
+
+### 11. The Forest Encampment — награда за Weaver
+
+- Поговори с Silk.
+  - Квест: Sharp and Cruel.  
+  - Награда: камни поддержки 18 уровня.
+- Используй Waypoint в `The Crossroads`.
+
+---
+
+### 12. The Crossroads → The Broken Bridge (Kraityn)
+
+- От Waypoint двигайся на север к `The Broken Bridge`.
+  - Подсказка: выход примерно к северу от центра.
+
+---
+
+### 13. The Broken Bridge
+
+- (Опционально) Найди тайный сундук с 3 Rogue Exiles.
+  - Подсказка: следуй по дороге к Waypoint, рядом ищи руины с сундуком.
+- Убей Kraityn и забери его амулет.
+  - Подсказка: его лагерь находится вдоль дороги.
+- Вернись в `The Forest Encampment` (релог) при необходимости.
+
+---
+
+### 14. The Forest Encampment → The Riverways → The Wetlands (Oak)
+
+- Используй Waypoint в `The Riverways`.
+- В `The Riverways` найди тропу между двумя столбами — это вход в `The Wetlands`.
+  - Подсказка: ищи характерный проход с двумя колоннами.
+
+---
+
+### 15. The Wetlands
+
+- Найди лагерь Oak и убей его (или помоги — по твоему решению).
+  - Подсказка: лагерь — крупная арена-постройка, обычно на севере/северо-западе зоны.
+  - Маршрут: ориентируйся по крупному зигзагообразному контуру на мини-карте.
+- Активируй Waypoint.
+- Используй Waypoint в `The Western Forest`.
+
+---
+
+### 16. The Western Forest — Alira, Thaumetic Emblem, печать
+
+- Убей или помоги Alira.
+  - Подсказка: следуй по дороге на юго-запад до факела, затем по боковой каменистой тропе в лагерь Alira.
+- Продолжи путь по главной дороге до лагеря Blackguard.
+  - Убей Arteri и забери Thaumetic Emblem.
+- Используй Thaumetic Emblem на печати, чтобы разблокировать проход в сторону `The Vaal Ruins`.
+
+---
+
+### 17. The Forest Encampment — выбор судьбы бандитов
+
+- Поговори с Eramir, если убиты все трое бандитов.
+  - Квест: Deal with the Bandits.  
+  - Награда: The Apex (в случае убийства всех).
+  - Если ты помог одному из бандитов — не сдавай Eramir как убийцу всех.
+
+---
+
+### 18. Возврат в Акт 1 за пассивкой (обязательно)
+
+- Из `The Forest Encampment` используй Waypoint в `Lioneye's Watch` (Акт 1).
+- Поговори с Bestel.
+  - Квест: The Way Forward.  
+  - Награда: ⭐ пассивное очко.
+- (Опционально) Забери пропущенные камни у Nessa.
+- Вернись через Waypoint в `The Crossroads` (Акт 2).
+
+---
+
+### 19. The Crossroads → The Fellshrine Ruins → The Crypt
+
+- От Waypoint в `The Crossroads` иди на восток в `The Fellshrine Ruins`.
+- В `The Fellshrine Ruins` следуй по дороге к `The Crypt Level 1`.
+  - Подсказка: по пути можно убивать насекомых для поддержания зарядов и флаконов.
+
+---
+
+### 20. The Crypt Level 1
+
+- (Опционально, [LEAGUE START]) Пройди Trial of Ascendancy.
+  - Подсказка: тот же путь ведёт и к Trial, и к выходу на Level 2.
+  - Маршрут: мысленно проведи горизонтальную линию через стартовую комнату:
+    - если Waypoint внизу — следуй по стене, противоположной Waypoint;
+    - если сверху — иди по стене за Waypoint.
+- Найди выход в `The Crypt Level 2`.
+
+---
+
+### 21. The Crypt Level 2
+
+- Найди алтарь с Golden Hand.
+  - Подсказка: обычно расположен по диагонали от входа.
+- Вернись в `The Forest Encampment` (портал или релог).
+
+---
+
+### 22. The Forest Encampment — Through Sacred Ground
+
+- Поговори с Yeena.
+  - Квест: Through Sacred Ground.
+  - Возвращает ценную награду/прогресс квеста.
+- Используй Waypoint в `The Wetlands`.
+
+---
+
+### 23. The Wetlands → The Vaal Ruins
+
+- У входа в `The Vaal Ruins` используй Baleful Gem, чтобы отравить корни дерева.
+- Войди в `The Vaal Ruins`.
+
+---
+
+### 24. The Vaal Ruins → The Northern Forest
+
+- Пройди через `The Vaal Ruins` и выйди в `The Northern Forest`.
+  - Подсказка: зона имеет S- или L-образный маршрут; двигайся вперёд до тупика, затем поворачивай.
+
+---
+
+### 25. The Northern Forest → The Caverns
+
+- В `The Northern Forest` двигайся к `The Caverns`.
+  - Подсказка: следуй вдоль восточного берега, продвигаясь на север; ритуалы дают хороший опыт.
+
+---
+
+### 26. The Caverns
+
+- Активируй Waypoint.
+- (Опционально, [LEAGUE START]) Найди скрытую комнату с рецептом крафта:
+  - Подсказка: запертая дверь и два столба-переключателя рядом.
+- Найди вход в `The Ancient Pyramid`.
+
+---
+
+### 27. The Ancient Pyramid
+
+- Поднимайся по уровням к Pyramid Apex.
+  - Маршрут:
+    - первая лестница — в случайном углу;
+    - каждая следующая — диагонально напротив точки входа на текущий уровень.
+- На вершине, в `Pyramid Apex`, приготовься к бою с финальным боссом акта.
+
+---
+
+### 28. The Ancient Pyramid — Vaal Oversoul (финал акта 2)
+
+- Убей Vaal Oversoul.
+  - Рекомендуемый уровень: 22 (цель — 20–22).
+- (Опционально, [LEAGUE START]) Активируй рецепт крафта в `Pyramid Apex`.
+- Выйди в `The City of Sarn` — начало Акта 3.
+
+---
+
+Если этот стиль подходит, напиши «продолжить», и я оформлю Акт 3 в таком же формате для `README.md`.
